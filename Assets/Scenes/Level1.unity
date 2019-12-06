@@ -120,40 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &456172764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 254868865679656814, guid: 0faed53d552ec3642827ac8cf025039a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1039176607}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &456172765
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456172764}
-  serializedVersion: 2
-  m_Mass: 0.105
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &456172767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456172764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a1152768aecf6429bae2dd25e29f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1039176607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221,16 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 254868865679656815, guid: 0faed53d552ec3642827ac8cf025039a,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.59765
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685660521209686939, guid: 0faed53d552ec3642827ac8cf025039a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 53df0109c70eaa6448cef2c82dd74ac9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faed53d552ec3642827ac8cf025039a, type: 3}
 --- !u!1001 &1856728523597932149
