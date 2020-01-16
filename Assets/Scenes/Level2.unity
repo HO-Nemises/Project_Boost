@@ -4992,41 +4992,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223978019054981404, guid: b83e77ee1f3160946a8584a5fa2fa6aa,
-        type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
@@ -5118,11 +5083,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5911749417567960085, guid: 4a08743388a64884db28b0e7939f6a85,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 113.85196
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a08743388a64884db28b0e7939f6a85, type: 3}
