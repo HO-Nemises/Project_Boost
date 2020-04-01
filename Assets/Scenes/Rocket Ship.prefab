@@ -39,8 +39,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427960256}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 2
+  m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.077162705, b: 0.15087362, a: 1}
   m_Intensity: 2
   m_Range: 10
@@ -241,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rcsThrust: 150
-  mainThrust: 100
+  mainThrust: 50
   mainEngine: {fileID: 8300000, guid: 42842505168b27e438657c85d4f9cee2, type: 3}
   deathSound: {fileID: 8300000, guid: d344009fb6ad9c345b29c98b648904a0, type: 3}
   levelEndSound: {fileID: 8300000, guid: ae89313d8204cc34981b65d8ead258b1, type: 3}
@@ -319,6 +320,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -411,6 +413,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -503,6 +506,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -595,6 +599,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
