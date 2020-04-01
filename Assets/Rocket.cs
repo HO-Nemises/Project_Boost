@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Rocket : MonoBehaviour
 {
     // Start is called before the first frame update
+//test
     
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
