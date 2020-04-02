@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class Rocket : MonoBehaviour
 {
     // Start is called before the first frame update
-//test
-    
+//test 2
+
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
     [SerializeField] AudioClip mainEngine;
@@ -19,11 +19,9 @@ public class Rocket : MonoBehaviour
 
     Rigidbody rigidbody;
     AudioSource audioSource;
-
     enum State { Alive , Dying, Trancending }
     State state = State.Alive;
-
-
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -37,7 +35,7 @@ public class Rocket : MonoBehaviour
             RespondToRotateInput();
             RespondToThrustInput();
         }
-        
+       
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -77,6 +75,7 @@ public class Rocket : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         state = State.Alive;
+        
     }
 
     private void LoadNextLevel()
