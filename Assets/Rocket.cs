@@ -103,8 +103,9 @@ public class Rocket : MonoBehaviour
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(mainEngine);
+            mainEngineParticles.Play();
         }
-        mainEngineParticles.Play();
+        
     }
 
     private void RespondToRotateInput()
