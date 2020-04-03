@@ -1755,6 +1755,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ec5853b98b27144b431fa131430743, type: 3}
+--- !u!1 &830566992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6025066134157220721, guid: bdebb15b58e36b7419ab44fbc7f5a318,
+    type: 3}
+  m_PrefabInstance: {fileID: 2103396690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &830566993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830566992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cdb07b7b1df3d4fa55bdbedc929d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: -5, z: 0}
+  movementFactor: 0
 --- !u!4 &834929992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558330408294583484, guid: a5ec5853b98b27144b431fa131430743,
@@ -4497,7 +4517,7 @@ PrefabInstance:
     - target: {fileID: 6025066134157220721, guid: bdebb15b58e36b7419ab44fbc7f5a318,
         type: 3}
       propertyPath: m_Name
-      value: Obstacle (3)
+      value: Moving Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdebb15b58e36b7419ab44fbc7f5a318, type: 3}
@@ -4915,7 +4935,7 @@ PrefabInstance:
     - target: {fileID: 5911749417567960085, guid: 4a08743388a64884db28b0e7939f6a85,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4845767
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 5911749417567960085, guid: 4a08743388a64884db28b0e7939f6a85,
         type: 3}
