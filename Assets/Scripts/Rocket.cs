@@ -1,4 +1,5 @@
 ﻿
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,8 @@ public class Rocket : MonoBehaviour
     [SerializeField] ParticleSystem levelEndParticles;
     [SerializeField] float levelLoadDelay = 2f;
 
+    bool CollisionsOn = true;
+
     Rigidbody rigidbody;
     AudioSource audioSource;
     enum State { Alive , Dying, Trancending }
@@ -35,24 +38,33 @@ public class Rocket : MonoBehaviour
         if (state == State.Alive) {
             RespondToRotateInput();
             RespondToThrustInput();
+            if (Debug.isDebugBuild)
+            {
+                CheckForDebugKeys();
+            }
         }
        
     }
+
+   
     void OnCollisionEnter(Collision collision)
     {
         if (state != State.Alive) {
             return;
         }
-        switch (collision.gameObject.tag)
+        if (CollisionsOn)
         {
-            case "Friendly":
-                break;
-            case "Finish":
-                PlayerSuccess();
-                break;
-            default:
-                PlayerDied();
-                break;
+            switch (collision.gameObject.tag)
+            {
+                case "Friendly":
+                    break;
+                case "Finish":
+                    PlayerSuccess();
+                    break;
+                default:
+                    PlayerDied();
+                    break;
+            }
         }
     }
 
@@ -97,6 +109,7 @@ public class Rocket : MonoBehaviour
             mainEngineParticles.Stop();
         }
     }
+   
 
     private void ApplyThrust()
     {
@@ -124,5 +137,16 @@ public class Rocket : MonoBehaviour
             transform.Rotate(-Vector3.forward * rotationThisFrame);
         }
         rigidbody.freezeRotation = false; // resume physics rotation control
+    }
+    private void CheckForDebugKeys()
+    {
+        if (Input.GetKey(KeyCode.L))
+        {
+            Invoke("LoadNextLevel", 0);
+        }
+        if (Input.GetKey(KeyCode.C))
+        {
+            CollisionsOn = !CollisionsOn;
+        }
     }
 }
