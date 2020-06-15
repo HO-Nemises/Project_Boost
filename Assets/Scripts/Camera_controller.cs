@@ -19,7 +19,7 @@ public class Camera_controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CarObject = GameObject.Find("Car");
+        CarObject = GameObject.Find("FireTruck_Transforms");
         Cam_helper = GameObject.Find("Camera_helper");
         Main_Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
         Cam_Aim = GameObject.Find("Main Camera").GetComponent<AimConstraint>();
