@@ -10,13 +10,16 @@ public class Rocket : MonoBehaviour
 
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 100f;
-    [SerializeField] AudioClip mainEngine;
-    [SerializeField] AudioClip deathSound;
-    [SerializeField] AudioClip levelEndSound;
+    [SerializeField] AudioClip mainEngine = default;
+    [SerializeField] AudioClip deathSound = default;
+    [SerializeField] AudioClip levelEndSound = default;
 
-    [SerializeField] ParticleSystem mainEngineParticles;
-    [SerializeField] ParticleSystem deathParticles;
-    [SerializeField] ParticleSystem levelEndParticles;
+    [SerializeField] ParticleSystem mainEngineParticlesRear = default;
+    [SerializeField] ParticleSystem mainEngineParticlesFront = default;
+    [SerializeField] ParticleSystem RCSParticlesRear = default;
+    [SerializeField] ParticleSystem RCSParticlesFront = default;
+    [SerializeField] ParticleSystem deathParticles = default;
+    [SerializeField] ParticleSystem levelEndParticles = default;
     [SerializeField] float levelLoadDelay = 2f;
 
     bool CollisionsOn = true;
@@ -118,7 +121,8 @@ public class Rocket : MonoBehaviour
         else
         {
             audioSource.Stop();
-            mainEngineParticles.Stop();
+            mainEngineParticlesRear.Stop();
+            mainEngineParticlesFront.Stop();
         }
     }
    
@@ -129,7 +133,8 @@ public class Rocket : MonoBehaviour
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(mainEngine);
-            mainEngineParticles.Play();
+            mainEngineParticlesRear.Play();
+            mainEngineParticlesFront.Play();
         }
         
     }
@@ -142,12 +147,14 @@ public class Rocket : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
+            RCSParticlesRear.Play();
             transform.Rotate(Vector3.forward * rotationThisFrame);
         }
         else if (Input.GetKey(KeyCode.D))
         {
+            RCSParticlesFront.Play();
             transform.Rotate(-Vector3.forward * rotationThisFrame);
-        }
+        } 
     }
     private void CheckForDebugKeys()
     {
